@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div>
+    <div className="header">
       <svg
         width="211"
         height="68"
