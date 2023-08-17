@@ -1,4 +1,27 @@
 .header{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+    align-items: center;
+    width: 1240px;
+    margin: 45px 100px 50px 100px;
+    &__nav{
+        display: flex;
+        align-self: flex-end;
+        &--accueil{
+            width: 136px;
+        }
+        &--apropos{
+            width: 173px;
+        }
+        & li{
+            display: flex;
+            justify-content: flex-end;
+            font-size: 24px;
+            color: #FF6060;
+        }
+    }
+}
+.nav-active{
+    text-decoration: underline;
+    color: #FF6060;
 }

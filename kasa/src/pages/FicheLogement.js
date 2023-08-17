@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
 
 const FicheLogement = () => {
-  return <div>Fiche Logement</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default FicheLogement;

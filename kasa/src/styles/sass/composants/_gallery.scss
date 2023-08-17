@@ -1,0 +1,38 @@
+.gallery{
+    width: 1240px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #F6F6F6;
+    margin: 0px 100px 50px 100px;
+    &__display{
+        padding-top: 56px;
+        padding-bottom: 43px;
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+        &-card{
+            width: 340px;
+            height: 340px;
+            list-style-type: none;
+            background: #FF6060;
+            border-radius: 10px;
+            
+            & h2{
+                color: #FFF;
+                font-size: 18px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+            &-overlay{
+                width: 340px;
+                height: 340px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+                border-radius: 10px;
+                display: flex;
+                align-items: flex-end;
+            }       
+           
+        }
+    }
+}

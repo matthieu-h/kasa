@@ -1,0 +1,25 @@
+.banner{
+    width: 1240px;
+    height: 223px;
+    margin: 0px 100px 43px 100px;
+    // background: #000;
+    border-radius: 25px;
+    // opacity: 0.3;
+    position : relative; 
+    display : inline-block; 
+    & img{
+        width: 1240px;
+        height: 223px;
+        border-radius: 25px;
+        object-fit: cover;
+        // opacity: 0.3;
+    }
+    h1{
+        color: #FFF;
+        font-size: 48px;
+        display : block;
+        position : absolute;
+        top : 50px;
+        left: 273px
+    }
+}
