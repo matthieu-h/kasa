@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner src="./pictures/IMG.png" title="Chez vous, partout et ailleurs" />
       <Gallery />
       <Footer />
     </>

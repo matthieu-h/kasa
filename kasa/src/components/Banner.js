@@ -1,11 +1,11 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = (picture) => {
   return (
     <>
       <div className="banner">
-        <img src="./pictures/IMG.png" alt="" />
-        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={picture.src} alt="" />
+        <h1>{picture.title}</h1>
       </div>
     </>
   );
