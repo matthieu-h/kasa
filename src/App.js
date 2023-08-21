@@ -1,19 +1,24 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import APropos from "./pages/APropos";
-import Erreur404 from "./pages/Erreur404";
-import FicheLogement from "./pages/FicheLogement";
+import Error404 from "./pages/erreur-404";
+import About from "./pages/a-propos";
+import HousingCard from "./pages/fiche-logement";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { about, error404, home, housing } from "./routes";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/A-propos" element={<APropos />} />
-        <Route path="*" element={<Erreur404 />} />
-        <Route path="/Fiche-Logement" element={<FicheLogement />} />
+        <Route path={home} element={<Home />} />
+        <Route path={error404} element={<Error404 />} />
+        <Route path={about} element={<About />} />
+        <Route path={housing} element={<HousingCard />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

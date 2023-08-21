@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { about, home } from "../routes";
 
 const Header = () => {
   return (
@@ -36,7 +37,7 @@ const Header = () => {
         <nav className="header__nav">
           <ul>
             <NavLink
-              to="/"
+              to={home}
               className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
               <li className="header__nav--accueil">ACCUEIL</li>
@@ -44,7 +45,7 @@ const Header = () => {
           </ul>
           <ul>
             <NavLink
-              to="/A-propos"
+              to={about}
               className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
               <li className="header__nav--apropos">A PROPOS</li>
