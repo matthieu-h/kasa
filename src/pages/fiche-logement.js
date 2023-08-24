@@ -1,7 +1,7 @@
 import React from "react";
 
 const HousingCard = () => {
-  return <></>;
+  return <h1>fiche logement</h1>;
 };
 
 export default HousingCard;

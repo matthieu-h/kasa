@@ -8,6 +8,7 @@ const Gallery = () => {
         <ul className="gallery__display">
           {data.map((item) => (
             <li key={item.id} className="gallery__display-card">
+              <img src={item.pictures[0]} alt="photos du logement" />
               <div className="gallery__display-card-overlay">
                 <h2>{item.title}</h2>
               </div>

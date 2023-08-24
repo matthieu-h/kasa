@@ -19,7 +19,6 @@ a {
   width: 1240px;
   height: 223px;
   margin: 0px 100px 43px 100px;
-  border-radius: 25px;
   position: relative;
   display: inline-block;
 }
@@ -41,7 +40,6 @@ a {
 
 .gallery {
   width: 1240px;
-  flex-shrink: 0;
   border-radius: 25px;
   background: #F6F6F6;
   margin: 0px 100px 50px 100px;
@@ -58,22 +56,34 @@ a {
   width: 340px;
   height: 340px;
   list-style-type: none;
-  background: #FF6060;
+  position: relative;
+}
+.gallery__display-card img {
+  position: relative;
+  z-index: 1;
   border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery__display-card-overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  display: flex;
+  align-items: flex-end;
 }
 .gallery__display-card h2 {
   color: #FFF;
   font-size: 18px;
-  margin-bottom: 20px;
   margin-left: 20px;
-}
-.gallery__display-card-overlay {
-  width: 340px;
-  height: 340px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-end;
+  margin-bottom: 20px;
 }
 
 .header {
