@@ -20,20 +20,29 @@ a {
   height: 223px;
   margin: 0px 100px 43px 100px;
   position: relative;
-  display: inline-block;
 }
 .banner img {
+  position: relative;
+  z-index: 1;
   width: 1240px;
   height: 223px;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.banner__overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.3);
+}
 .banner h1 {
+  position: absolute;
   color: #FFF;
   font-size: 48px;
-  display: block;
-  position: absolute;
   top: 50px;
   left: 273px;
 }
@@ -80,6 +89,7 @@ a {
   align-items: flex-end;
 }
 .gallery__display-card h2 {
+  position: absolute;
   color: #FFF;
   font-size: 18px;
   margin-left: 20px;
