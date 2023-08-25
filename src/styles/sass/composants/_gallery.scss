@@ -10,6 +10,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 50px;
+        &-link{
+            width: 340px;
+        }
         &-card{
             width: 340px;
             height: 340px;
