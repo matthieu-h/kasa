@@ -1,4 +1,4 @@
-body {
+body, p {
   margin: 0;
 }
 
@@ -18,7 +18,7 @@ a {
 .banner {
   width: 1240px;
   height: 223px;
-  margin: 0px 100px 43px 100px;
+  margin: 0px 100px 0px 100px;
   position: relative;
 }
 .banner img {
@@ -54,6 +54,7 @@ a {
   margin: 0px 100px 50px 100px;
 }
 .gallery__display {
+  margin-top: 43px;
   padding-top: 56px;
   padding-bottom: 43px;
   padding-left: 50px;
@@ -97,6 +98,39 @@ a {
   font-size: 18px;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+.value__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1023px;
+  height: 52px;
+  border-radius: 5px;
+  background: #FF6060;
+  border: none;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+.value__content {
+  width: 973px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #F6F6F6;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.value__content.open {
+  visibility: visible;
 }
 
 .footer img {
