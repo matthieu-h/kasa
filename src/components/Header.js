@@ -7,8 +7,7 @@ const Header = () => {
     <>
       <div className="header">
         <svg
-          width="211"
-          height="68"
+          className="header__icon"
           viewBox="0 0 211 68"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +42,7 @@ const Header = () => {
               <li className="header__nav--accueil">ACCUEIL</li>
             </NavLink>
           </ul>
-          <ul>
+          <ul className="header__nav--ul">
             <NavLink
               to={about}
               className={(nav) => (nav.isActive ? "nav-active" : "")}

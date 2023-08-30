@@ -2,22 +2,53 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 1240px;
     margin: 45px 100px 50px 100px;
+    @media (max-width: 1030px) {
+        margin: 20px 20px 27px 20px;
+    }
+    &__icon{
+        width: 211px;
+        height: 68px;
+    @media (max-width: 950px) {
+        max-width: 145px;
+        max-height: 46px;
+        }
+    }
     &__nav{
         display: flex;
         align-self: flex-end;
+        width: auto;
         &--accueil{
             width: 136px;
+            @media (max-width: 650px) {
+                width: 70px;
+                }
+        }
+        & ul{
+            @media (max-width: 650px) {
+                padding-left: 0px;
+                }
         }
         &--apropos{
             width: 173px;
+            @media (max-width: 950px) {
+                width: 100px;
+                }
+                @media (max-width: 650px) {
+                    width: 80px;
+                    }
         }
         & li{
             display: flex;
             justify-content: flex-end;
             font-size: 24px;
             color: #FF6060;
+            @media (max-width: 950px) {
+                font-size: 18px;
+                }
+                @media (max-width: 650px) {
+                    font-size: 12px;
+                    }
         }
     }
 }

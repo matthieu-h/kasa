@@ -1,4 +1,4 @@
-.value{
+.collapse{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,9 +17,14 @@
         font-size: 24px;
         padding-left: 15px;
         padding-right: 20px;
-    //     &-icon{
-    //     transform: rotate (180deg);
-    // }
+        &-icon{
+            &.open{
+                animation: rotation .3s forwards;
+            }
+            // &.false{
+            //     animation: rotation 8000ms forwards;
+            // }
+        }
     }
     &__content{
     width: 973px;
@@ -27,10 +32,27 @@
     padding-right: 25px;
     background: #F6F6F6;
     visibility: hidden;
-    transition: all .3s ease-in-out;
+    transition: all 3s ease-in-out;
         &.open {
-        visibility: visible;
+            visibility: visible;
         }
     }
 }
 
+@keyframes rotation{
+    from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(-180deg);
+}
+}
+
+// @keyframes reverserotation{
+//     from {
+// transform: rotate(0deg);
+// }
+// to {
+// transform: rotate(280deg);
+// }
+// }
