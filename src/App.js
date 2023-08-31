@@ -8,6 +8,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { about, error404, home, housing } from "./routes";
 
+// import { useNavigate } from "react-router-dom";
+// import { useParams } from "react-router-dom";
+
 const App = () => {
   return (
     <BrowserRouter>
