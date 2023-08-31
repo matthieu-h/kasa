@@ -322,6 +322,27 @@ a {
   color: #FF6060;
 }
 
+.error404 {
+  color: #FF6060;
+  text-align: center;
+  margin-bottom: 139px;
+}
+.error404__title {
+  font-size: 288px;
+  font-weight: 700;
+  margin-top: 139px;
+  margin-bottom: 139px;
+}
+.error404 p {
+  font-size: 36px;
+  margin-bottom: 139px;
+}
+.error404__link {
+  font-size: 18px;
+  color: #FF6060;
+  text-decoration: underline;
+}
+
 .housing img {
   width: 1240px;
   height: 415px;
