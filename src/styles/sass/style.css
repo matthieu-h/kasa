@@ -186,7 +186,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 988px;
+  width: 69%;
   height: 52px;
   border-radius: 5px;
   background: #FF6060;
@@ -209,9 +209,9 @@ a {
 .collapse__content {
   position: relative;
   z-index: 1;
-  width: 973px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 69%;
+  padding-left: 15px;
+  padding-right: 20px;
   background: #F6F6F6;
   visibility: hidden;
   transform: translateY(-20px);
