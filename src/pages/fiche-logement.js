@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import data from "../assets/housing.json";
+import Slideshow from "../components/Slideshow";
 
 const HousingCard = () => {
   let { logementId } = useParams();
@@ -12,11 +13,7 @@ const HousingCard = () => {
     }
   });
   if (housingObject) {
-    return (
-      <div className="housing">
-        <img src={housingObject.pictures[0]} alt="photos du logement" />
-      </div>
-    );
+    return <Slideshow />;
   }
 };
 
