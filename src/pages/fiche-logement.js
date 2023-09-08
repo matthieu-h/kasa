@@ -6,6 +6,7 @@ import Slideshow from "../components/Slideshow";
 const HousingCard = () => {
   let { logementId } = useParams();
   const housingObject = data.find((e) => e.id === logementId);
+  const picturesArray = housingObject.pictures;
   const navigate = useNavigate();
   useEffect(() => {
     if (!housingObject) {
@@ -13,7 +14,7 @@ const HousingCard = () => {
     }
   });
   if (housingObject) {
-    return <Slideshow />;
+    return <Slideshow pictures={picturesArray} />;
   }
 };
 

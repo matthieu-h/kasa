@@ -1,0 +1,31 @@
+.housing__slideshow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+
+    &-picture{
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+        
+    }
+    &-arrow-left{
+        position: absolute;
+        left: 23px;
+    }
+    &-arrow-right{
+        position: absolute;
+        right: 10px;
+    }
+    &-index {
+        position: absolute;
+        bottom: 25px;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}
+
