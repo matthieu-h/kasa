@@ -7,7 +7,7 @@ const Slideshow = () => {
   let { logementId } = useParams();
   const housingObject = data.find((e) => e.id === logementId);
   const picturesArray = housingObject.pictures;
-  console.log(picturesArray);
+
   // compteur du carrousel
   const [index, setIndex] = useState(0);
   const length = picturesArray.length;

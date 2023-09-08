@@ -17,9 +17,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path={home} element={<Home />} />
-        <Route path={error404} element={<Error404 />} />
         <Route path={about} element={<About />} />
         <Route path={housing} element={<HousingCard />} />
+        <Route path={error404} element={<Error404 />} />
       </Routes>
       <Footer />
     </BrowserRouter>

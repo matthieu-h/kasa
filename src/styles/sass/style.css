@@ -226,25 +226,29 @@ a {
   opacity: 1;
 }
 
-.footer__desktop {
-  max-width: 1440px;
-  width: 100%;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 209px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  z-index: 2;
+  background: #000000;
 }
-.footer__mobile {
-  height: 209px;
-  max-width: 400px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
+.footer__logo {
+  width: 122px;
+  height: 39px;
+  margin-top: 66px;
 }
-@media (max-width: 400px) {
-  .footer__mobile {
-    z-index: 3;
+.footer p {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 28px;
+}
+@media (max-width: 650px) {
+  .footer p {
+    font-size: 12px;
+    width: 134px;
+    text-align: center;
+    margin-top: 17px;
   }
 }
 
