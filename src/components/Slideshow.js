@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Slideshow = ({ pictures }) => {
-  // compteur du carrousel
   const [index, setIndex] = useState(0);
   const length = pictures.length;
 

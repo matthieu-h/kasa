@@ -35,5 +35,3 @@ const About = () => {
 };
 
 export default About;
-
-// Fiabilité
