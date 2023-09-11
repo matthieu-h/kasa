@@ -2,18 +2,31 @@
     display: flex;
     justify-content: space-between;
     margin: 30px 100px 24px 100px;
+    @media (max-width: 800px) {
+        margin: 30px 20px 24px 20px;
+        }
+    @media (max-width: 650px) {
+        flex-direction: column;
+        } 
     &__titleLocTag{
         &-title{
             font-size: 36px;
             color: #FF6060;
             margin: 0;
+            @media (max-width: 800px) {
+                font-size: 18px;
+                }
         }
         &-location{
             font-size: 18px;
             color: #FF6060;
+            @media (max-width: 800px) {
+                font-size: 14px;
+                }
         }
         &-tag{
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
             padding: 0px;
             margin: 0;
@@ -30,15 +43,29 @@
                 background-color: #FF6060;
                 color: #FFFFFF;
                 font-size: 14px;
+                @media (max-width: 800px) {
+                    font-size: 10px;
+                    min-width: 74px;
+                    height: 18px;
+                    }
             }
         }
     }
     &__hostRating{
         display: flex;
         flex-direction: column;
+        @media (max-width: 800px) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            }
         &-host{
             display: flex;
             justify-content: flex-end;
+            @media (max-width: 650px) {
+                justify-content: flex-start;
+                } 
         }
         &-hostName{
             font-size: 18px;
@@ -48,19 +75,30 @@
             padding-right: 10px;
             display: flex;
             align-items: center;
+            @media (max-width: 800px) {
+                font-size: 12px;
+                width: 55px;
+                }
         }
         &-hostPicture{
             border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
             width: 64px;
             height: 64px;
+            @media (max-width: 800px) {
+                width: 32px;
+                height: 32px;
+                }
         }
         &-rating{
-               position: relative;
+            position: relative;
             list-style-type: none;
             display: flex;
             gap: 15px;
             padding: 0px;
             margin-top: 21px;
+            @media (max-width: 800px) {
+                margin-top: 9px;
+                }
             &.fullStars{
                 position: absolute;
                 bottom: -9px;
