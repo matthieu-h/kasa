@@ -1,0 +1,76 @@
+.informations{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px 24px 100px;
+    &__titleLocTag{
+        &-title{
+            font-size: 36px;
+            color: #FF6060;
+            margin: 0;
+        }
+        &-location{
+            font-size: 18px;
+            color: #FF6060;
+        }
+        &-tag{
+            display: flex;
+            gap: 10px;
+            padding: 0px;
+            margin: 0;
+            & li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                min-width: 95px;
+                height: 25px;
+                padding-right: 10px;
+                padding-left: 10px;
+                border-radius: 10px;
+                background-color: #FF6060;
+                color: #FFFFFF;
+                font-size: 14px;
+            }
+        }
+    }
+    &__hostRating{
+        display: flex;
+        flex-direction: column;
+        &-host{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-hostName{
+            font-size: 18px;
+            color: #FF6060;
+            width: 95px;
+            text-align: right;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+        &-hostPicture{
+            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+            width: 64px;
+            height: 64px;
+        }
+        &-rating{
+               position: relative;
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            padding: 0px;
+            margin-top: 21px;
+            &.fullStars{
+                position: absolute;
+                bottom: -9px;
+            }
+            & .fa-star{
+                color: #E3E3E3;
+                &.full{
+                    color: #FF6060;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.collapses {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 5%;
+    & .collapse{
+        margin-top: 0;
+        margin-bottom: 75px;
+        width: 50%;       
+        &__bar{
+            width: 94%;
+        }
+        &__content{
+            width: 94%;
+        }
+    }
+
+}

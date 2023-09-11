@@ -23,7 +23,9 @@ const HousingCard = () => {
   const hostPicture = hostObject.picture;
 
   const rating = Number(housingObject.rating);
-  const stars = Array(rating).fill(<i className="fa-solid fa-star"></i>);
+  const stars = Array(rating).fill(
+    <i className="fa-solid fa-star fa-lg full"></i>
+  );
   const genereStars = stars.map((rating, index) => (
     <li key={index}>{rating}</li>
   ));
@@ -53,9 +55,10 @@ const HousingCard = () => {
           hostPicture={hostPicture}
           rating={genereStars}
         />
-
-        <Collapse title="Description" content={description} />
-        <Collapse title="Équipements" content={genereEquipments} />
+        <div className="collapses">
+          <Collapse title="Description" content={description} />
+          <Collapse title="Équipements" content={genereEquipments} />
+        </div>
       </div>
     );
   }

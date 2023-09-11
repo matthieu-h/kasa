@@ -240,6 +240,81 @@ a {
   margin-bottom: 20px;
 }
 
+.informations {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 100px 24px 100px;
+}
+.informations__titleLocTag-title {
+  font-size: 36px;
+  color: #FF6060;
+  margin: 0;
+}
+.informations__titleLocTag-location {
+  font-size: 18px;
+  color: #FF6060;
+}
+.informations__titleLocTag-tag {
+  display: flex;
+  gap: 10px;
+  padding: 0px;
+  margin: 0;
+}
+.informations__titleLocTag-tag li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  min-width: 95px;
+  height: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.informations__hostRating {
+  display: flex;
+  flex-direction: column;
+}
+.informations__hostRating-host {
+  display: flex;
+  justify-content: flex-end;
+}
+.informations__hostRating-hostName {
+  font-size: 18px;
+  color: #FF6060;
+  width: 95px;
+  text-align: right;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.informations__hostRating-hostPicture {
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  width: 64px;
+  height: 64px;
+}
+.informations__hostRating-rating {
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0px;
+  margin-top: 21px;
+}
+.informations__hostRating-rating.fullStars {
+  position: absolute;
+  bottom: -9px;
+}
+.informations__hostRating-rating .fa-star {
+  color: #E3E3E3;
+}
+.informations__hostRating-rating .fa-star.full {
+  color: #FF6060;
+}
+
 .housing__slideshow {
   position: relative;
   display: flex;
@@ -261,7 +336,7 @@ a {
 }
 .housing__slideshow-arrow-right {
   position: absolute;
-  right: 10px;
+  right: 23px;
 }
 .housing__slideshow-index {
   position: absolute;
@@ -276,6 +351,8 @@ a {
   align-items: center;
   height: 209px;
   background: #000000;
+  position: relative;
+  z-index: 5;
 }
 .footer__logo {
   width: 122px;
@@ -389,4 +466,22 @@ a {
   font-size: 18px;
   color: #FF6060;
   text-decoration: underline;
+}
+
+.collapses {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 5%;
+}
+.collapses .collapse {
+  margin-top: 0;
+  margin-bottom: 75px;
+  width: 50%;
+}
+.collapses .collapse__bar {
+  width: 94%;
+}
+.collapses .collapse__content {
+  width: 94%;
 }/*# sourceMappingURL=style.css.map */

@@ -18,7 +18,18 @@ const Informations = ({ title, location, tags, name, hostPicture, rating }) => {
             className="informations__hostRating-hostPicture"
           />
         </div>
-        <div className="informations__hostRating-rating">{rating}</div>
+        <div className="informations__hostRating-rating">
+          <ul className="informations__hostRating-rating emptyStars">
+            <i className="fa-solid fa-star fa-lg"></i>
+            <i className="fa-solid fa-star fa-lg"></i>
+            <i className="fa-solid fa-star fa-lg"></i>
+            <i className="fa-solid fa-star fa-lg"></i>
+            <i className="fa-solid fa-star fa-lg"></i>
+          </ul>
+          <ul className="informations__hostRating-rating fullStars">
+            {rating}
+          </ul>
+        </div>
       </div>
     </div>
   );
