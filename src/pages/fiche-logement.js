@@ -2,14 +2,12 @@ import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import data from "../assets/housing.json";
 import Slideshow from "../components/Slideshow";
-import Informations from "../components/Informations";
+import Informations from "../components/Information";
 import Collapse from "../components/Collapse";
 
 const HousingCard = () => {
   let { logementId } = useParams();
   const housingObject = data.find((e) => e.id === logementId);
-
-  console.log(housingObject);
 
   const picturesArray = housingObject.pictures;
   const title = housingObject.title;
@@ -25,7 +23,7 @@ const HousingCard = () => {
   const hostPicture = hostObject.picture;
 
   const rating = Number(housingObject.rating);
-  const stars = Array(rating).fill(<i class="fa-solid fa-star"></i>);
+  const stars = Array(rating).fill(<i className="fa-solid fa-star"></i>);
   const genereStars = stars.map((rating, index) => (
     <li key={index}>{rating}</li>
   ));
@@ -55,6 +53,7 @@ const HousingCard = () => {
           hostPicture={hostPicture}
           rating={genereStars}
         />
+
         <Collapse title="Description" content={description} />
         <Collapse title="Équipements" content={genereEquipments} />
       </div>

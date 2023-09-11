@@ -7,7 +7,7 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${open && "open"}`}>
       <div className="collapse__bar">
         {title}
         <i
