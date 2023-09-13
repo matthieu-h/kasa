@@ -1,13 +1,17 @@
-import React, { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import data from "../assets/housing.json";
 import Slideshow from "../components/Slideshow";
 import Informations from "../components/Information";
 import Collapse from "../components/Collapse";
+import Error404 from "./erreur-404";
 
 const HousingCard = () => {
   let { logementId } = useParams();
   const housingObject = data.find((e) => e.id === logementId);
+
+  if (!housingObject) {
+    return <Error404 />;
+  }
 
   const picturesArray = housingObject.pictures;
   const title = housingObject.title;
@@ -37,12 +41,6 @@ const HousingCard = () => {
     <li key={index}>{equipments}</li>
   ));
 
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (!housingObject) {
-      navigate("./pages/erreur-404");
-    }
-  });
   if (housingObject) {
     return (
       <div>
