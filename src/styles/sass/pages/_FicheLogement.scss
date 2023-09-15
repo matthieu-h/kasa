@@ -12,11 +12,11 @@
     
     & .collapse{
         margin-top: 0;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
         width: 50%; 
         @media (max-width: 800px) {
             width: 100%;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
             }      
         &__bar{
             width: 94%;
