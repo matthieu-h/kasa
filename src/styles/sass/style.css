@@ -590,7 +590,9 @@ a {
 .error404 {
   color: #FF6060;
   text-align: center;
-  margin-bottom: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .error404__title {
   font-size: 288px;
@@ -598,14 +600,37 @@ a {
   margin-top: 139px;
   margin-bottom: 139px;
 }
+@media (max-width: 1030px) {
+  .error404__title {
+    font-size: 96px;
+    margin-top: 113px;
+    margin-bottom: 113px;
+  }
+}
 .error404 p {
   font-size: 36px;
   margin-bottom: 139px;
+}
+@media (max-width: 1030px) {
+  .error404 p {
+    font-size: 18px;
+    width: 219px;
+    margin-bottom: 113px;
+    text-align: center;
+  }
 }
 .error404__link {
   font-size: 18px;
   color: #FF6060;
   text-decoration: underline;
+  margin-bottom: 139px;
+}
+@media (max-width: 1030px) {
+  .error404__link {
+    font-size: 13px;
+    width: 219px;
+    margin-bottom: 113px;
+  }
 }
 
 .collapses {

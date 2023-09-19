@@ -1,7 +1,6 @@
 import React from "react";
 import data from "../assets/housing.json";
 import { NavLink } from "react-router-dom";
-// import { housing } from "../routes";
 
 const Gallery = () => {
   return (
